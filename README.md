@@ -78,6 +78,14 @@ display(Audio(Mujer3, rate=ratem3))
 
 
 
+
+
+<audio controls>
+  <source src="data/Mujer1.wav" type="audio/wav">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+
+
 ---
 
 
