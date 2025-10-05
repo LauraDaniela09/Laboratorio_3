@@ -1,6 +1,6 @@
-##laboratorio 3 
+## laboratorio 3 
 
-importancion de librerias 
+*## importancion de librerias* 
 ```python
 import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt
