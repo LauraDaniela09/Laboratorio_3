@@ -82,15 +82,4 @@ A continuación se presentan las grabaciones masculinas y femeninas.
 
 ---
 
-### Audios masculinos
-
-- [🎧 Man1](https://github.com/karengarzon05/Laboratorio_3/raw/main/Man1.wav)
-- [🎧 Man2](https://github.com/karengarzon05/Laboratorio_3/raw/main/Man2.wav)
-- [🎧 Man3](https://github.com/karengarzon05/Laboratorio_3/raw/main/man%203.wav)
-
-### Audios femeninos
-
-- [🎧 Mujer1](https://github.com/karengarzon05/Laboratorio_3/raw/main/Mujer1.wav)
-- [🎧 Mujer2](https://github.com/karengarzon05/Laboratorio_3/raw/main/Mujer2.wav)
-- [🎧 Mujer3](https://github.com/karengarzon05/Laboratorio_3/raw/main/Mujer3.wav)
 
