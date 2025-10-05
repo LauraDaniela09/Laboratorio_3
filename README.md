@@ -27,7 +27,7 @@ plt.show()
 display(Audio(Mujer1, rate=ratem1))
 ```
 ## resultado
-*audio de la señal*
+*Audio de la señal*
 
 🎧 [AUDIO MUJER 1](Mujer1.wav)
 
@@ -53,8 +53,10 @@ plt.show()
 display(Audio(Mujer2, rate=ratem2))
 ```
 ## resultado
-*audio de la señal*
+*Audio de la señal*
+
 🎧 [AUDIO MUJER 2](Mujer2.wav)
+
 *señal generada*
 <p align="center">
 <img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/18d09971-acb2-47ad-b98b-75d4d02f7b98" />
@@ -77,8 +79,10 @@ plt.show()
 display(Audio(Mujer3, rate=ratem3))
 ```
 ## resultado
-*audio de la señal*
+*Audio de la señal*
+
 🎧 [AUDIO MUJER 3](Mujer3.wav)
+
 *señal generada*
 <p align="center">
 <img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
@@ -101,8 +105,10 @@ plt.show()
 display(Audio(man1, rate=rateh1))
 ```
 ## resultado
-*audio de la señal*
+*Audio de la señal*
+
 🎧 [AUDIO HOMBRE 1](Man1.wav)
+
 *señal generada*
 <p align="center">
 <img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/06d82fc7-cf9e-4078-9001-23d8408eeb78" />
@@ -125,8 +131,10 @@ plt.show()
 display(Audio(man2, rate=rateh2))
 ```
 ## resultado
-*audio de la señal*
+*Audio de la señal*
+
 🎧 [AUDIO HOMBRE 2](Man2.wav)
+
 *señal generada*
 <p align="center">
 <img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/aff23ed9-2cb8-4382-a6fc-0966b9f483ae" />
@@ -149,8 +157,10 @@ plt.show()
 display(Audio(man3, rate=rateh3))
 ```
 ## resultado
-*audio de la señal*
+*Audio de la señal*
+
 🎧 [AUDIO HOMBRE 3](man3.wav)
+
 *señal generada*
 <p align="center">
 <img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/265c2a14-9681-4724-9c95-7e243bd389fe" />
