@@ -77,14 +77,7 @@ display(Audio(Mujer3, rate=ratem3))
 </p>
 
 
-
-
-
-<audio controls>
-  <source src="data/Mujer1.wav" type="audio/wav">
-  Tu navegador no soporta el elemento de audio.
-</audio>
-
+🎧 [Escuchar el audio en GitHub](Mujer1.wav)
 
 ---
 
