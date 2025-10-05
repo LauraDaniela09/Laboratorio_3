@@ -27,7 +27,7 @@ plt.show()
 display(Audio(Mujer1, rate=ratem1))
 ```
 ## resultado
-
+🎧 [AUDIO MUJER 1](Mujer1.wav)
 <p align="center">
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
 </p>
@@ -49,7 +49,7 @@ plt.show()
 display(Audio(Mujer2, rate=ratem2))
 ```
 ## resultado
-
+🎧 [AUDIO MUJER 2](Mujer2.wav)
 <p align="center">
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/18d09971-acb2-47ad-b98b-75d4d02f7b98" />
 </p>
@@ -71,13 +71,13 @@ plt.show()
 display(Audio(Mujer3, rate=ratem3))
 ```
 ## resultado
-
+🎧 [AUDIO MUJER 3](Mujer3.wav)
 <p align="center">
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
 
 
-🎧 [Escuchar el audio en GitHub](Mujer1.wav)
+
 
 ---
 
