@@ -76,43 +76,4 @@ display(Audio(Mujer3, rate=ratem3))
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
 
-# 🎙️ Voces del Proyecto
-**Escucha las grabaciones de voces utilizadas en este laboratorio.**
-
----
-
-### 👩 Mujer 1
-<audio controls>
-  <source src="Mujer1.wav" type="audio/wav">
-  Tu navegador no soporta audio.
-</audio>
-
-### 👩 Mujer 2
-<audio controls>
-  <source src="Mujer2.wav" type="audio/wav">
-  Tu navegador no soporta audio.
-</audio>
-
-### 👩 Mujer 3
-<audio controls>
-  <source src="Mujer3.wav" type="audio/wav">
-  Tu navegador no soporta audio.
-</audio>
-
-### 👨 Hombre 1
-<audio controls>
-  <source src="Man1.wav" type="audio/wav">
-  Tu navegador no soporta audio.
-</audio>
-
-### 👨 Hombre 2
-<audio controls>
-  <source src="Man2.wav" type="audio/wav">
-  Tu navegador no soporta audio.
-</audio>
-
-### 👨 Hombre 3
-<audio controls>
-  <source src="man%203.wav" type="audio/wav">
-  Tu navegador no soporta audio.
-</audio>
+[Escuchar en Google Drive](https://drive.google.com/file/d/18gQBxZndZTuBcJVE3gS5CK7GUHsztu_S/view?usp=drive_link)
