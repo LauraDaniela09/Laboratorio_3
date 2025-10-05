@@ -76,4 +76,46 @@ display(Audio(Mujer3, rate=ratem3))
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
 
-[Escuchar en Google Drive](https://drive.google.com/file/d/18gQBxZndZTuBcJVE3gS5CK7GUHsztu_S/view?usp=drive_link)
+# Laboratorio 3 – Captura de audio
+
+A continuación se presentan las grabaciones masculinas y femeninas.
+
+---
+
+### 🔹 Audios masculinos
+
+#### Man1
+<audio controls>
+  <source src="Man1.wav" type="audio/wav">
+  Tu navegador no soporta la reproducción de audio.
+</audio>
+
+#### Man2
+<audio controls>
+  <source src="Man2.wav" type="audio/wav">
+</audio>
+
+#### Man3
+<audio controls>
+  <source src="man%203.wav" type="audio/wav">
+</audio>
+
+---
+
+### 🔹 Audios femeninos
+
+#### Mujer1
+<audio controls>
+  <source src="Mujer1.wav" type="audio/wav">
+</audio>
+
+#### Mujer2
+<audio controls>
+  <source src="Mujer2.wav" type="audio/wav">
+</audio>
+
+#### Mujer3
+<audio controls>
+  <source src="Mujer3.wav" type="audio/wav">
+</audio>
+
