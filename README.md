@@ -1,4 +1,4 @@
-## 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤 3 - 𝙛𝙧𝙚𝙘𝙪𝙚𝙣𝙘𝙞𝙖 𝙮 𝙫𝙤𝙯
+## 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - 𝐟𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 𝐯𝐨𝐳
 
 *importancion de librerias* 
 ```python
@@ -29,7 +29,7 @@ display(Audio(Mujer1, rate=ratem1))
 ## resultado
 
 <p align="center">
-<img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
+<img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
 </p>
 
 ```python
@@ -51,7 +51,7 @@ display(Audio(Mujer2, rate=ratem2))
 ## resultado
 
 <p align="center">
-<img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/18d09971-acb2-47ad-b98b-75d4d02f7b98" />
+<img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/18d09971-acb2-47ad-b98b-75d4d02f7b98" />
 </p>
 
 ```python
@@ -73,5 +73,5 @@ display(Audio(Mujer3, rate=ratem3))
 ## resultado
 
 <p align="center">
-<img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
+<img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
