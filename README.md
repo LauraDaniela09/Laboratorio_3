@@ -28,7 +28,9 @@ display(Audio(Mujer1, rate=ratem1))
 ```
 ## resultado
 *audio de la señal*
+
 🎧 [AUDIO MUJER 1](Mujer1.wav)
+
 *señal generada*
 <p align="center">
 <img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
