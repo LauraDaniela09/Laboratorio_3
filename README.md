@@ -76,9 +76,7 @@ display(Audio(Mujer3, rate=ratem3))
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
 
-# Laboratorio 3 – Captura de audio
 
-A continuación se presentan las grabaciones masculinas y femeninas.
 
 ---
 
