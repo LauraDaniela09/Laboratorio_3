@@ -1,6 +1,6 @@
-## laboratorio 3 
+## laboratorio 3 - frecuencia y voz
 
-*## importancion de librerias* 
+*importancion de librerias* 
 ```python
 import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt
@@ -8,7 +8,7 @@ import numpy as np
 from IPython.display import Audio
 
 ```
-<h1 align="center"><i><b>ᴘᴀʀᴛᴇ ᴀ ᴅᴇʟ ʟᴀʙᴏʀᴀᴛᴏʀɪᴏ</b></i></h1>
+<h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝐚 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
 
 ```python
 #Señal mujer 1
