@@ -1,3 +1,1 @@
-# Laboratorio_3
-capturar y procesar señales de voz masculinas y femeninas 
-iiajajkljakljkajklajñaak
+<h1 style="color:#9A00FF;">LABORATORIO 3</h1>
