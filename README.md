@@ -76,52 +76,43 @@ display(Audio(Mujer3, rate=ratem3))
 <img width="1034" height="290" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
 
-<h1 align="center" style="color:#7B68EE;"><i><b> Voces del Proyecto</b></i></h1>
-<p align="center">Escucha las grabaciones de voces utilizadas en este laboratorio.</p>
+# 🎙️ Voces del Proyecto
+**Escucha las grabaciones de voces utilizadas en este laboratorio.**
 
-<hr style="border:1px solid #7B68EE; width:80%;">
+---
 
-<div align="center">
+### 👩 Mujer 1
+<audio controls>
+  <source src="Mujer1.wav" type="audio/wav">
+  Tu navegador no soporta audio.
+</audio>
 
-  <h3 style="color:#6A0DAD;"> Mujer 1</h3>
-  <audio controls>
-    <source src="audios/Mujer1.wav" type="audio/wav">
-    Tu navegador no soporta audio.
-  </audio>
-  <br><br>
+### 👩 Mujer 2
+<audio controls>
+  <source src="Mujer2.wav" type="audio/wav">
+  Tu navegador no soporta audio.
+</audio>
 
-  <h3 style="color:#6A0DAD;"> Mujer 2</h3>
-  <audio controls>
-    <source src="audios/Mujer2.wav" type="audio/wav">
-    Tu navegador no soporta audio.
-  </audio>
-  <br><br>
+### 👩 Mujer 3
+<audio controls>
+  <source src="Mujer3.wav" type="audio/wav">
+  Tu navegador no soporta audio.
+</audio>
 
-  <h3 style="color:#6A0DAD;"> Mujer 3</h3>
-  <audio controls>
-    <source src="audios/Mujer3.wav" type="audio/wav">
-    Tu navegador no soporta audio.
-  </audio>
-  <br><br>
+### 👨 Hombre 1
+<audio controls>
+  <source src="Man1.wav" type="audio/wav">
+  Tu navegador no soporta audio.
+</audio>
 
-  <h3 style="color:#191970;">Hombre 1</h3>
-  <audio controls>
-    <source src="audios/Man1.wav" type="audio/wav">
-    Tu navegador no soporta audio.
-  </audio>
-  <br><br>
+### 👨 Hombre 2
+<audio controls>
+  <source src="Man2.wav" type="audio/wav">
+  Tu navegador no soporta audio.
+</audio>
 
-  <h3 style="color:#191970;"> Hombre 2</h3>
-  <audio controls>
-    <source src="audios/Man2.wav" type="audio/wav">
-    Tu navegador no soporta audio.
-  </audio>
-  <br><br>
-
-  <h3 style="color:#191970;"> Hombre 3</h3>
-  <audio controls>
-    <source src="audios/man%203.wav" type="audio/wav">
-    Tu navegador no soporta audio.
-  </audio>
-
-</div>
+### 👨 Hombre 3
+<audio controls>
+  <source src="man%203.wav" type="audio/wav">
+  Tu navegador no soporta audio.
+</audio>
