@@ -1,4 +1,9 @@
 ## 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - 𝐟𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 𝐯𝐨𝐳
+𝙞𝙣𝙩𝙧𝙤𝙙𝙪𝙘𝙘𝙞𝙤𝙣
+En este laboratorio se realizó un análisis espectral de la voz humana empleando técnicas de procesamiento digital de señales. Se utilizaron grabaciones de voces masculinas y femeninas para calcular parámetros como la frecuencia fundamental, frecuencia media, brillo e intensidad.
+
+𝙤𝙗𝙟𝙚𝙩𝙞𝙫𝙤
+Aplicar la Transformada de Fourier para analizar y comparar las características espectrales de voces masculinas y femeninas, identificando sus diferencias en frecuencia e intensidad para comprender mejor el comportamiento acústico de la voz humana.
 
 𝙞𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙞𝙗𝙧𝙚𝙧𝙞𝙖𝙨
 ```python
