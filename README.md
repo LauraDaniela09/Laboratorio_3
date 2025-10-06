@@ -495,23 +495,23 @@ Se diseña el filtro pasabanda tipo butterworth que devuelve los coeficientes de
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
 se respondera las siguientes preguntas con respecto a los resultados obtenidos 
 
-- **¿Qué diferencias se observan en la frecuencia fundamental?**
+- ##¿Qué diferencias se observan en la frecuencia fundamental?
  
 La frecuencia fundamental (F0) fue significativamente más alta en las voces femeninas que en las masculinas.Esto se debe a que las cuerdas vocales de las mujeres son más cortas y delgadas, lo que hace que vibren a una mayor velocidad, en cambio las voces masculinas presentan una F0 más baja, ya que sus cuerdas vocales son más largas y con mayor masa, lo que genera vibraciones más lentas.Por tanto, los hombres tienden a producir sonidos más graves (bajos) y las mujeres sonidos más agudos (altos).
 
-- **¿Qué otras diferencias se notan en términos de brillo, media o intensidad?**
+- ##¿Qué otras diferencias se notan en términos de brillo, media o intensidad?
 
 Tambien se puede concluir que las voces masculinas suelen mostrar mayor intensidad (nivel de presión sonora o volumen) debido a una mayor capacidad pulmonar y resonadores más amplios, mientras que las voces femeninas presentan un brillo espectral más acentuado, es decir, más energía en frecuencias altas, lo que las hace sonar más claras o agudas.
 
 En cuanto a la media de amplitud, los hombres tienden a tener valores algo superiores por la potencia de emisión, mientras que las mujeres muestran menor amplitud pero más variabilidad en las frecuencias.
 
-- **Importancia clínica del jitter y shimmer en el análisis de la voz**
+- ##Importancia clínica del jitter y shimmer en el análisis de la voz
 
 El jitter mide la variabilidad en la frecuencia (diferencias entre periodos sucesivos de vibración), El shimmer mide la variabilidad en la amplitud (cambios en la intensidad entre ciclos).Ambos parámetros son indicadores de estabilidad vocal: en una voz sana, las variaciones son mínimas, mientras que en voces con alteraciones (nódulos, pólipos, disfonías, parálisis, etc.) los valores aumentan.
 
 Por eso, tienen gran valor clínico, ya que ayudan a detectar disfunciones laríngeas,permiten cuantificar la severidad de la alteración vocal,Sirven para evaluar la eficacia de terapias o tratamientos.Sin embargo, su interpretación requiere precaución, ya que pueden verse afectados por el nivel de intensidad, ruido ambiental o calidad de la grabación.por eso, se recomienda analizarlos junto con otros parámetros como la relación armónico-ruido (HNR) o medidas cepstrales.
 
-- **Conclusiones**
+- ##Conclusiones
 
 La frecuencia fundamental es el parámetro que más diferencia se muestra en hombres y mujeres, donde las voces femeninas presentan valores mayores de F0.
 Las voces masculinas tienden a ser más intensas y con menor brillo, mientras que las femeninas son más agudas y con mayor energía en las frecuencias altas.
