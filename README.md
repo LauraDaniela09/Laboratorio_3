@@ -401,7 +401,6 @@ plt.show()
 </p>
 
 ```python
-# === Función para calcular características ===
 def analizar_audio(ruta):
     fs, audio = wavfile.read(ruta)
     if audio.ndim > 1:
@@ -411,34 +410,24 @@ def analizar_audio(ruta):
     N = len(audio)
     t = np.arange(N) / fs
     
-    # --- FFT ---
     fft_vals = np.fft.fft(audio)
     fft_vals = np.abs(fft_vals[:N//2])
     freqs = np.fft.fftfreq(N, 1/fs)[:N//2]
     
-    # --- Frecuencia fundamental ---
     peaks, _ = find_peaks(fft_vals, height=np.max(fft_vals)*0.1)
     f0 = freqs[peaks[0]] if len(peaks) > 0 else 0
     
-    # --- Frecuencia media ---
     f_media = np.sum(freqs * fft_vals) / np.sum(fft_vals)
     
-    # --- Brillo (energía por encima de 1500 Hz) ---
     idx_brillo = freqs > 1500
     brillo = np.sum(fft_vals[idx_brillo]) / np.sum(fft_vals)
-    
-    # --- Intensidad (energía RMS) ---
     intensidad = np.sqrt(np.mean(audio**2))
     
     return f0, f_media, brillo, intensidad, freqs, fft_vals, t, audio
-
-# === Rutas de los archivos ===
 archivos = [
     "/Man1.wav", "/Man2.wav", "/man 3.wav",
     "/Mujer1.wav", "/Mujer2.wav", "/Mujer3.wav"
 ]
-
-# === Procesar y mostrar ===
 resultados = []
 
 plt.figure(figsize=(12,10))
