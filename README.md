@@ -496,6 +496,19 @@ Se diseña el filtro pasabanda tipo butterworth que devuelve los coeficientes de
 se respondera las siguientes preguntas con respecto a los resultados obtenidos 
 
  ¿Qué diferencias se observan en la frecuencia fundamental? 
+La frecuencia fundamental (F0) fue significativamente más alta en las voces femeninas que en las masculinas.Esto se debe a que las cuerdas vocales de las mujeres son más cortas y delgadas, lo que hace que vibren a una mayor velocidad, en cambio las voces masculinas presentan una F0 más baja, ya que sus cuerdas vocales son más largas y con mayor masa, lo que genera vibraciones más lentas.Por tanto, los hombres tienden a producir sonidos más graves (bajos) y las mujeres sonidos más agudos (altos).
+
+¿Qué otras diferencias se notan en términos de brillo, media o intensidad?
+
+Tambien se puede concluir que las voces masculinas suelen mostrar mayor intensidad (nivel de presión sonora o volumen) debido a una mayor capacidad pulmonar y resonadores más amplios, mientras que las voces femeninas presentan un brillo espectral más acentuado, es decir, más energía en frecuencias altas, lo que las hace sonar más claras o agudas.
+
+En cuanto a la media de amplitud, los hombres tienden a tener valores algo superiores por la potencia de emisión, mientras que las mujeres muestran menor amplitud pero más variabilidad en las frecuencias.
 
 
+Conclusiones 
 
+La frecuencia fundamental es el parámetro que más diferencia se muestra en hombres y mujeres, donde las voces femeninas presentan valores mayores de F0.
+
+Las voces masculinas tienden a ser más intensas y con menor brillo, mientras que las femeninas son más agudas y con mayor energía en las frecuencias altas.
+
+Las diferencias en jitter y shimmer es poca, ya que ambos presentan niveles similares cuando se analizan voces sanas y grabadas en condiciones controladas.
