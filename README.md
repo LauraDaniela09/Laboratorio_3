@@ -9,7 +9,7 @@ from IPython.display import Audio
 
 ```
 <h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝐚 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
-
+𝙫𝙞𝙨𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙖 𝙨𝙚ñ𝙖𝙡𝙚𝙨 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤
 ```python
 #Señal mujer 1
 ratem1, Mujer1 = wav.read("/Mujer1.wav")
@@ -166,29 +166,23 @@ display(Audio(man3, rate=rateh3))
 <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/265c2a14-9681-4724-9c95-7e243bd389fe" />
 </p>
 
-tranformadas de fourier
+𝙏𝙧𝙖𝙣𝙨𝙛𝙤𝙧𝙢𝙖𝙙𝙖 𝙙𝙚 𝙛𝙤𝙪𝙧𝙞𝙚𝙧
+
 ```python
 #MUJER 1
-# === Cargar el audio ===
 fs, audio = wavfile.read('/Mujer1.wav')
 
-# Convertir a mono si es estéreo
 if audio.ndim > 1:
     audio = np.mean(audio, axis=1)
 
-# === FFT ===
 N = len(audio)
 X = np.fft.fft(audio)
 f = np.linspace(0, fs/2, N//2)
-
-# === Solo parte real positiva ===
 X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
 mag = np.abs(X[:N//2]) / N
-
-# === Graficar ===
 plt.figure(figsize=(12, 8))
 
-# Parte real positiva
+# Transformada de fourier
 plt.subplot(2, 1, 1)
 plt.plot(f, X_real_pos,color="#D36CA0")
 plt.title('Transformada de Fourier (AUDIO MUJER 1)')
@@ -215,26 +209,19 @@ plt.show()
 
 ```python
 #MUJER 2
-# === Cargar el audio ===
 fs, audio = wavfile.read('/Mujer2.wav')
 
-# Convertir a mono si es estéreo
 if audio.ndim > 1:
     audio = np.mean(audio, axis=1)
 
-# === FFT ===
 N = len(audio)
 X = np.fft.fft(audio)
 f = np.linspace(0, fs/2, N//2)
-
-# === Solo parte real positiva ===
 X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
 mag = np.abs(X[:N//2]) / N
-
-# === Graficar ===
 plt.figure(figsize=(12, 8))
 
-# Parte real positiva
+#Transformada de fourier
 plt.subplot(2, 1, 1)
 plt.plot(f, X_real_pos,color="#D36CA0")
 plt.title('Transformada de Fourier (AUDIO MUJER 2)')
@@ -262,26 +249,19 @@ plt.show()
 
 ```python
 #MUJER 3
-# === Cargar el audio ===
 fs, audio = wavfile.read('/Mujer3.wav')
 
-# Convertir a mono si es estéreo
 if audio.ndim > 1:
     audio = np.mean(audio, axis=1)
 
-# === FFT ===
 N = len(audio)
 X = np.fft.fft(audio)
 f = np.linspace(0, fs/2, N//2)
-
-# === Solo parte real positiva ===
 X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
 mag = np.abs(X[:N//2]) / N
-
-# === Graficar ===
 plt.figure(figsize=(12, 8))
 
-# Parte real positiva
+# Transformada de fourier
 plt.subplot(2, 1, 1)
 plt.plot(f, X_real_pos,color="#D36CA0")
 plt.title('Transformada de Fourier (AUDIO MUJER 3)')
@@ -307,26 +287,19 @@ plt.show()
 
 ```python
 #HOMBRE 1
-# === Cargar el audio ===
 fs, audio = wavfile.read('/Man1.wav')
 
-# Convertir a mono si es estéreo
 if audio.ndim > 1:
     audio = np.mean(audio, axis=1)
 
-# === FFT ===
 N = len(audio)
 X = np.fft.fft(audio)
 f = np.linspace(0, fs/2, N//2)
-
-# === Solo parte real positiva ===
 X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
 mag = np.abs(X[:N//2]) / N
-
-# === Graficar ===
 plt.figure(figsize=(12, 8))
 
-# Parte real positiva
+#Transformada de fourier
 plt.subplot(2, 1, 1)
 plt.plot(f, X_real_pos,color="#32CD32")
 plt.title('Transformada de Fourier (AUDIO HOMBRE 1)')
@@ -353,26 +326,19 @@ plt.show()
 
 ```python
 #HOMBRE 2
-# === Cargar el audio ===
 fs, audio = wavfile.read('/Man2.wav')
 
-# Convertir a mono si es estéreo
 if audio.ndim > 1:
     audio = np.mean(audio, axis=1)
 
-# === FFT ===
 N = len(audio)
 X = np.fft.fft(audio)
 f = np.linspace(0, fs/2, N//2)
-
-# === Solo parte real positiva ===
 X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
 mag = np.abs(X[:N//2]) / N
-
-# === Graficar ===
 plt.figure(figsize=(12, 8))
 
-# Parte real positiva
+# Transformada de fourier
 plt.subplot(2, 1, 1)
 plt.plot(f, X_real_pos, color="#32CD32")
 plt.title('Transformada de Fourier (AUDIO HOMBRE 2)')
@@ -398,26 +364,18 @@ plt.show()
 
 ```python
 #HOMBRE 3
-# === Cargar el audio ===
 fs, audio = wavfile.read('/man 3.wav')
-
-# Convertir a mono si es estéreo
 if audio.ndim > 1:
     audio = np.mean(audio, axis=1)
 
-# === FFT ===
 N = len(audio)
 X = np.fft.fft(audio)
 f = np.linspace(0, fs/2, N//2)
-
-# === Solo parte real positiva ===
 X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
 mag = np.abs(X[:N//2]) / N
-
-# === Graficar ===
 plt.figure(figsize=(12, 8))
 
-# Parte real positiva
+# Transformada de fourier
 plt.subplot(2, 1, 1)
 plt.plot(f, X_real_pos,color="#32CD32")
 plt.title('Transformada de Fourier (AUDIO HOMBRE 3)')
