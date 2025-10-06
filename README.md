@@ -351,6 +351,97 @@ plt.show()
 <img width="950" height="400" alt="image" src="https://github.com/user-attachments/assets/56bbd888-96fa-46aa-9b05-9aa0ce4b0600" />
 </p>
 
+```python
+#HOMBRE 2
+# === Cargar el audio ===
+fs, audio = wavfile.read('/Man2.wav')
+
+# Convertir a mono si es estéreo
+if audio.ndim > 1:
+    audio = np.mean(audio, axis=1)
+
+# === FFT ===
+N = len(audio)
+X = np.fft.fft(audio)
+f = np.linspace(0, fs/2, N//2)
+
+# === Solo parte real positiva ===
+X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
+mag = np.abs(X[:N//2]) / N
+
+# === Graficar ===
+plt.figure(figsize=(12, 8))
+
+# Parte real positiva
+plt.subplot(2, 1, 1)
+plt.plot(f, X_real_pos, color="#32CD32")
+plt.title('Transformada de Fourier (AUDIO HOMBRE 2)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Amplitud ')
+plt.grid(True)
+
+# Espectro de magnitud
+plt.subplot(2, 1, 2)
+plt.plot(f, 20*np.log10(mag + 1e-12), color="#00FF7F")
+plt.title('Espectro de Magnitud ')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Magnitud [dB]')
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+## resultado
+<p align="center">
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/5ec55699-dff0-487f-afa8-c86c511f9444" />
+</p>
+
+```python
+#HOMBRE 3
+# === Cargar el audio ===
+fs, audio = wavfile.read('/man 3.wav')
+
+# Convertir a mono si es estéreo
+if audio.ndim > 1:
+    audio = np.mean(audio, axis=1)
+
+# === FFT ===
+N = len(audio)
+X = np.fft.fft(audio)
+f = np.linspace(0, fs/2, N//2)
+
+# === Solo parte real positiva ===
+X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
+mag = np.abs(X[:N//2]) / N
+
+# === Graficar ===
+plt.figure(figsize=(12, 8))
+
+# Parte real positiva
+plt.subplot(2, 1, 1)
+plt.plot(f, X_real_pos,color="#32CD32")
+plt.title('Transformada de Fourier (AUDIO HOMBRE 3)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Amplitud ')
+plt.grid(True)
+
+# Espectro de magnitud
+plt.subplot(2, 1, 2)
+plt.plot(f, 20*np.log10(mag + 1e-12),color="#00FF7F")
+plt.title('Espectro de Magnitud ')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Magnitud [dB]')
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+## resultado
+<p align="center">
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/82225b2f-82d0-4c0e-9541-1eadd3ca4edb" />
+</p>
+
+
 ---
 
 
