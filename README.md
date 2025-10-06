@@ -493,6 +493,9 @@ Se diseña el filtro pasabanda tipo butterworth que devuelve los coeficientes de
 
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
+se respondera las siguientes preguntas con respecto a los resultados obtenidos 
+
+ ¿Qué diferencias se observan en la frecuencia fundamental? 
 
 
 
