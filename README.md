@@ -463,6 +463,7 @@ for ruta in archivos:
 <img width="500" height="194" alt="image" src="https://github.com/user-attachments/assets/72d6d7eb-34e5-4f73-83f7-df2b3f0d429c" />
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
+#Filtro pasabanda hombre
 Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
 
 *IMAGEN DE LOS CALCULOS DE SOFI
@@ -490,6 +491,147 @@ t = np.linspace(0, len(Man1)/fs, len(Man1))
 ```
 Se asigna la frecuencia de muestreo `ratem1` a la variable `fs` y se calculan las frecuencias normalizadas y la de Nyquist.
 Se diseña el filtro pasabanda tipo butterworth que devuelve los coeficientes del filtro en `b` (numerador) y `a` (denominador).
+Aplica el filtro a la señal usando `filtfilt`, que filtra hacia adelante y hacia atrás para eliminar el desfase (fase cero).
+
+*CODIGO E IMAGEN DE BODE
+
+#Filtro pasabanda mujer
+Se repite el mismo proceso para la señal de mujer pero con rango de 150-500Hz.
+```python
+from scipy import signal
+from scipy.io import wavfile
+ratem1, Mujer1 = wav.read("/Mujer1.wav")
+
+f_low = 150
+f_high = 500
+order = 2
+fs = ratem1
+nyquist = fs / 2
+low = f_low / nyquist
+high = f_high / nyquist
+
+b, a = signal.butter(order, [f_low/nyquist, f_high/nyquist], btype='bandpass')
+Mujer1_filtrada = signal.filtfilt(b, a, Mujer1)
+t = np.linspace(0, len(Mujer1)/fs, len(Mujer1))
+
+plt.figure(figsize=(12,5))
+plt.subplot(2,1,1)
+plt.plot(t, Mujer1, color='#6A5ACD')
+plt.title("Señal original (voz mujer)")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.subplot(2,1,2)
+plt.plot(t, Mujer1_filtrada, color='#9A00FF')
+plt.title("Señal filtrada (pasa banda 150–500 Hz, Butterworth orden 2)")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.tight_layout()
+plt.show()
+```
+Se grafica la respuesta de frecuencia (Diagrama Bode de magnitud)
+```pythom
+##Grafico de respuesta de frecuencia (bode)
+w, h = signal.freqz(b, a, worN=4096)
+f = (w/np.pi) * (fs/2)
+
+plt.figure(figsize=(8,4))
+plt.plot(f, 20*np.log10(abs(h)))
+plt.title("Respuesta en frecuencia del filtro pasa-banda (zoom 0–1000 Hz)")
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Magnitud [dB]")
+plt.xlim(0, 1000)
+plt.ylim(-60, 5)
+plt.grid(True)
+plt.show()
+```
+*FOTO DIAGRAMA BODE
+
+#Medición jitter y shimmer
+Se importan las librerias, se define la función `jitter_shimmer` donde se recibe la señal de voz, se calculan el jitter y shimmer y sus porcentajes.
+Finalmente se visualiza una grafica donde se ve en azul la señal original de voz, en rojo los cruces por ceros y en verde los picos. Y una tabla con los resultados de cada señal.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.io import wavfile
+from scipy.signal import find_peaks
+import pandas as pd
+
+#Función para calcular jitter y shimmer
+def jitter_shimmer(audio, fs, nombre):
+    # Normalizar señal
+    audio = audio.astype(float)
+    audio = audio - np.mean(audio)
+    audio = audio / np.max(np.abs(audio))
+
+    #Cruces por cero
+    cruces = np.where(np.diff(np.sign(audio)) > 0)[0]
+    if len(cruces) < 2:
+        print(f"{nombre}: no hay suficientes cruces por cero\n")
+        return np.nan, np.nan, np.nan, np.nan
+
+    Ti = np.diff(cruces) / fs
+    jitter_abs = np.mean(np.abs(np.diff(Ti)))
+    jitter_rel = (jitter_abs / np.mean(Ti)) * 100
+
+    #Picos
+    peaks, _ = find_peaks(audio, height=0)
+    if len(peaks) < 2:
+        print(f"{nombre}: no hay suficientes picos\n")
+        return jitter_abs, jitter_rel, np.nan, np.nan
+
+    Ai = audio[peaks]
+    shimmer_abs = np.mean(np.abs(np.diff(Ai)))
+    shimmer_rel = (shimmer_abs / np.mean(Ai)) * 100
+
+    #Graficar señal completa
+    t = np.linspace(0, len(audio)/fs, len(audio))
+    plt.figure(figsize=(10, 4))
+    plt.plot(t, audio, 'b', label="Señal")
+    plt.plot(t[cruces], audio[cruces], 'ro', markersize=3, label="Cruces")
+    plt.plot(t[peaks], audio[peaks], 'go', markersize=3, label="Picos")
+    plt.title(f"{nombre} - Señal completa")
+    plt.xlabel("Tiempo [s]")
+    plt.ylabel("Amplitud")
+    plt.legend()
+    plt.grid(True)
+    plt.show(block=False)
+
+    return jitter_abs, jitter_rel, shimmer_abs, shimmer_rel
+
+
+
+archivos = {
+    "Mujer1": "/content/Mujer1.wav",
+    "Mujer2": "/content/Mujer2.wav",
+    "Mujer3": "/content/Mujer3.wav",
+    "Hombre1": "/content/Man1.wav",
+    "Hombre2": "/content/Man2.wav",
+    "Hombre3": "/content/man 3.wav"
+}
+
+#Calculos
+resultados = []
+
+for nombre, ruta in archivos.items():
+    fs, audio = wavfile.read(ruta)
+    if audio.ndim > 1:
+        audio = audio[:, 0]
+
+    jitter_abs, jitter_rel, shimmer_abs, shimmer_rel = jitter_shimmer(audio, fs, nombre)
+    resultados.append([nombre, jitter_abs, jitter_rel, shimmer_abs, shimmer_rel])
+
+#Resultados en tabla
+df = pd.DataFrame(resultados, columns=["Señal", "Jitter_abs (s)", "Jitter_rel (%)", "Shimmer_abs", "Shimmer_rel (%)"])
+
+print("\n Resultados de Jitter y Shimmer \n")
+print(df.to_string(index=False, justify='center', formatters={
+    "Jitter_abs (s)": "{:.6f}".format,
+    "Jitter_rel (%)": "{:.2f}".format,
+    "Shimmer_abs": "{:.6f}".format,
+    "Shimmer_rel (%)": "{:.2f}".format
+}))
+```
 
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
