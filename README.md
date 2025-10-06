@@ -409,18 +409,18 @@ plt.show()
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/82225b2f-82d0-4c0e-9541-1eadd3ca4edb" />
 </p>
 
+𝙞𝙙𝙚𝙣𝙩𝙞𝙛𝙞𝙘𝙖𝙘𝙞𝙤𝙣 𝙮 𝙧𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙡𝙖𝙨 𝙘𝙖𝙧𝙖𝙘𝙩𝙚𝙧𝙞𝙨𝙩𝙞𝙘𝙖𝙨 𝙙𝙚 𝙘𝙖𝙙𝙖 𝙨𝙚ñ𝙖𝙡
+El código carga los audios, los convierte a mono y los normaliza. Luego calcula su frecuencia fundamental (f₀) con `find_peaks()`, la frecuencia media, el brillo (energía en frecuencias altas) y la intensidad RMS (energía total del sonido). Finalmente, muestra estos valores en una tabla para comparar las características de cada audio.
+
 ```python
-def analizar_audio(ruta):
+def calcular_caracteristicas(ruta):
     fs, audio = wavfile.read(ruta)
     if audio.ndim > 1:
-        audio = np.mean(audio, axis=1)  # mono
+        audio = np.mean(audio, axis=1)  # convertir a mono
     audio = audio / np.max(np.abs(audio))  # normalizar
     
     N = len(audio)
-    t = np.arange(N) / fs
-    
-    fft_vals = np.fft.fft(audio)
-    fft_vals = np.abs(fft_vals[:N//2])
+    fft_vals = np.abs(np.fft.fft(audio)[:N//2])
     freqs = np.fft.fftfreq(N, 1/fs)[:N//2]
     
     peaks, _ = find_peaks(fft_vals, height=np.max(fft_vals)*0.1)
@@ -428,50 +428,31 @@ def analizar_audio(ruta):
     
     f_media = np.sum(freqs * fft_vals) / np.sum(fft_vals)
     
+    # --- Brillo (energía por encima de 1500 Hz) ---
     idx_brillo = freqs > 1500
     brillo = np.sum(fft_vals[idx_brillo]) / np.sum(fft_vals)
+    
+    # --- Intensidad RMS ---
     intensidad = np.sqrt(np.mean(audio**2))
     
-    return f0, f_media, brillo, intensidad, freqs, fft_vals, t, audio
+    return f0, f_media, brillo, intensidad
+
 archivos = [
     "/Man1.wav", "/Man2.wav", "/man 3.wav",
     "/Mujer1.wav", "/Mujer2.wav", "/Mujer3.wav"
 ]
-resultados = []
-
-plt.figure(figsize=(12,10))
-for i, ruta in enumerate(archivos, 1):
-    f0, f_media, brillo, intensidad, freqs, fft_vals, t, audio = analizar_audio(ruta)
-    resultados.append((ruta, f0, f_media, brillo, intensidad))
-    
-    # Graficar onda y espectro
-    plt.subplot(6, 2, 2*i-1)
-    plt.plot(t, audio, color='#7B68EE')
-    plt.title(f"{ruta} - Señal en el tiempo")
-    plt.xlabel("Tiempo [s]"); plt.ylabel("Amplitud")
-    plt.grid(True, alpha=0.3)
-
-    plt.subplot(6, 2, 2*i)
-    plt.plot(freqs, fft_vals, color='darkmagenta')
-    plt.title(f"{ruta} - Espectro de Frecuencias")
-    plt.xlabel("Frecuencia [Hz]"); plt.ylabel("Magnitud")
-    plt.xlim(0, 5000)
-    plt.grid(True, alpha=0.3)
-
-plt.tight_layout()
-plt.show()
 
 print("\nRESULTADOS DE CADA AUDIO:\n")
 print(f"{'Archivo':<15} {'F fund (Hz)':<12} {'F media (Hz)':<15} {'Brillo':<10} {'Intensidad':<12}")
-for r in resultados:
-print(f"{r[0]:<15} {r[1]:<12.2f} {r[2]:<15.2f} {r[3]:<10.3f} {r[4]:<12.4f}")
+
+for ruta in archivos:
+    f0, f_media, brillo, intensidad = calcular_caracteristicas(ruta)
+    print(f"{ruta:<15} {f0:<12.2f} {f_media:<15.2f} {brillo:<10.3f} {intensidad:<12.4f}")
+
 ```
 ## resultado
-<p align="center">
-<img width="700" height="990" alt="image" src="https://github.com/user-attachments/assets/67bbd3a5-a9b3-4f32-a383-fa70852a8172" />
-</p>
 
-<img width="500" height="203" alt="image" src="https://github.com/user-attachments/assets/5820007e-d664-460a-b209-448f6f5ade80" />
+<img width="851" height="194" alt="image" src="https://github.com/user-attachments/assets/72d6d7eb-34e5-4f73-83f7-df2b3f0d429c" />
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
