@@ -459,7 +459,7 @@ for ruta in archivos:
 ```
 ## resultado
 
-<img width="851" height="194" alt="image" src="https://github.com/user-attachments/assets/72d6d7eb-34e5-4f73-83f7-df2b3f0d429c" />
+<img width="500" height="194" alt="image" src="https://github.com/user-attachments/assets/72d6d7eb-34e5-4f73-83f7-df2b3f0d429c" />
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
