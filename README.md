@@ -211,6 +211,7 @@ plt.show()
 <p align="center">
 <img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/8baf1b7f-2378-406d-8f27-380e5ff7939d" />
 </p>
+
 <p align="center">
 <img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/467e446a-dd4d-42b4-90dd-eee842f4fb1b" />
 </p>
@@ -258,6 +259,9 @@ plt.show()
 ## resultado
 <p align="center">
 <img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/31971d0e-4aa9-4d65-8cf7-89541f3e5d8b" />
+    </p>
+
+    <p align="center">
 <img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/b980f406-afaf-4260-92f8-8ef1959aec46" />
 </p>
 
@@ -304,8 +308,12 @@ plt.show()
 ## resultado
 <p align="center">
 <img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/bf9e2991-724d-4286-ac5d-5e364dbdac9a" />
+</p>
+
+<p align="center">
 <img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/8ed30b3d-4a81-4338-90e6-16e5c006a45d" />
 </p>
+
 ```python
 #HOMBRE 1
 # === Cargar el audio ===
@@ -345,11 +353,14 @@ plt.grid(True)
 
 plt.tight_layout()
 plt.show()
-``
+```
 
 ## resultado
 <p align="center">
 <img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/56bbd888-96fa-46aa-9b05-9aa0ce4b0600" />
+</p>
+
+<p align="center">
 <img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/af6d9b7e-70d6-46f9-a2c5-2d40cf4219ad" />
 </p>
 
