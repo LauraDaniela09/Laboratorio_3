@@ -448,7 +448,7 @@ for i, ruta in enumerate(archivos, 1):
     
     # Graficar onda y espectro
     plt.subplot(6, 2, 2*i-1)
-    plt.plot(t, audio, color='royalblue')
+    plt.plot(t, audio, color='#7B68EE')
     plt.title(f"{ruta} - Señal en el tiempo")
     plt.xlabel("Tiempo [s]"); plt.ylabel("Amplitud")
     plt.grid(True, alpha=0.3)
@@ -470,10 +470,10 @@ print(f"{r[0]:<15} {r[1]:<12.2f} {r[2]:<15.2f} {r[3]:<10.3f} {r[4]:<12.4f}")
 ```
 ## resultado
 <p align="center">
-<img width="700" height="900" alt="image" src="https://github.com/user-attachments/assets/05831967-374c-490e-8565-e9d2df6d2e5a" />
+<img width="700" height="990" alt="image" src="https://github.com/user-attachments/assets/67bbd3a5-a9b3-4f32-a383-fa70852a8172" />
 </p>
 
-<img width="400" height="203" alt="image" src="https://github.com/user-attachments/assets/5820007e-d664-460a-b209-448f6f5ade80" />
+<img width="500" height="203" alt="image" src="https://github.com/user-attachments/assets/5820007e-d664-460a-b209-448f6f5ade80" />
 
 
 ---
