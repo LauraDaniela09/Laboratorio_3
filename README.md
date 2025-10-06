@@ -1,15 +1,16 @@
 ## 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - 𝐟𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 𝐯𝐨𝐳
 
-*importancion de librerias* 
+𝙞𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙞𝙗𝙧𝙚𝙧𝙞𝙖𝙨
 ```python
 import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt
 import numpy as np
 from IPython.display import Audio
-
+from scipy.signal import find_peaks
+from scipy.io import wavfile
 ```
 <h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝐚 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
-𝙫𝙞𝙨𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙖 𝙨𝙚ñ𝙖𝙡𝙚𝙨 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤
+𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙤𝙨 𝙖𝙪𝙙𝙞𝙤𝙨 𝙮 𝙫𝙞𝙨𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙖 𝙨𝙚ñ𝙖𝙡 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤
 
 ```python
 #Señal mujer 1
@@ -464,6 +465,8 @@ print(f"{r[0]:<15} {r[1]:<12.2f} {r[2]:<15.2f} {r[3]:<10.3f} {r[4]:<12.4f}")
 
 <img width="500" height="203" alt="image" src="https://github.com/user-attachments/assets/5820007e-d664-460a-b209-448f6f5ade80" />
 
+<h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
+<h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
 
 ---
 
