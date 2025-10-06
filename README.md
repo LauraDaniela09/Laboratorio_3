@@ -33,7 +33,7 @@ display(Audio(Mujer1, rate=ratem1))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
+<img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
 </p>
 
 ```python
@@ -59,7 +59,7 @@ display(Audio(Mujer2, rate=ratem2))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/18d09971-acb2-47ad-b98b-75d4d02f7b98" />
+<img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/18d09971-acb2-47ad-b98b-75d4d02f7b98" />
 </p>
 
 ```python
@@ -85,7 +85,7 @@ display(Audio(Mujer3, rate=ratem3))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
+<img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/2fcf033d-8976-4293-91cb-8cbd37fd19aa" />
 </p>
 
 ```python
@@ -111,7 +111,7 @@ display(Audio(man1, rate=rateh1))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/06d82fc7-cf9e-4078-9001-23d8408eeb78" />
+<img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/06d82fc7-cf9e-4078-9001-23d8408eeb78" />
 </p>
 
 ```python
@@ -137,7 +137,7 @@ display(Audio(man2, rate=rateh2))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/aff23ed9-2cb8-4382-a6fc-0966b9f483ae" />
+<img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/aff23ed9-2cb8-4382-a6fc-0966b9f483ae" />
 </p>
 
 ```python
@@ -163,7 +163,7 @@ display(Audio(man3, rate=rateh3))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/265c2a14-9681-4724-9c95-7e243bd389fe" />
+<img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/265c2a14-9681-4724-9c95-7e243bd389fe" />
 </p>
 
 tranformadas de fourier
@@ -209,7 +209,7 @@ plt.show()
 ```
 ## resultado
 <p align="center">
-<img width="1189" height="500" alt="image" src="https://github.com/user-attachments/assets/8baf1b7f-2378-406d-8f27-380e5ff7939d" />
+<img width="950" height="500" alt="image" src="https://github.com/user-attachments/assets/8baf1b7f-2378-406d-8f27-380e5ff7939d" />
 </p>
 
 
@@ -255,7 +255,7 @@ plt.show()
 ```
 ## resultado
 <p align="center">
-<img width="1189" height="500" alt="image" src="https://github.com/user-attachments/assets/31971d0e-4aa9-4d65-8cf7-89541f3e5d8b" />
+<img width="950" height="500" alt="image" src="https://github.com/user-attachments/assets/31971d0e-4aa9-4d65-8cf7-89541f3e5d8b" />
     </p>
 
 
@@ -302,7 +302,7 @@ plt.show()
 ```
 ## resultado
 <p align="center">
-<img width="1189" height="500" alt="image" src="https://github.com/user-attachments/assets/bf9e2991-724d-4286-ac5d-5e364dbdac9a" />
+<img width="950" height="500" alt="image" src="https://github.com/user-attachments/assets/bf9e2991-724d-4286-ac5d-5e364dbdac9a" />
 </p>
 
 ```python
@@ -348,7 +348,7 @@ plt.show()
 
 ## resultado
 <p align="center">
-<img width="1189" height="500" alt="image" src="https://github.com/user-attachments/assets/56bbd888-96fa-46aa-9b05-9aa0ce4b0600" />
+<img width="950" height="500" alt="image" src="https://github.com/user-attachments/assets/56bbd888-96fa-46aa-9b05-9aa0ce4b0600" />
 </p>
 
 ---
