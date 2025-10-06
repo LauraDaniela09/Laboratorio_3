@@ -417,6 +417,7 @@ plt.show()
 </p>
 
 𝙞𝙙𝙚𝙣𝙩𝙞𝙛𝙞𝙘𝙖𝙘𝙞𝙤𝙣 𝙮 𝙧𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙡𝙖𝙨 𝙘𝙖𝙧𝙖𝙘𝙩𝙚𝙧𝙞𝙨𝙩𝙞𝙘𝙖𝙨 𝙙𝙚 𝙘𝙖𝙙𝙖 𝙨𝙚ñ𝙖𝙡
+
 El código carga los audios, los convierte a mono y los normaliza. Luego calcula su frecuencia fundamental (f₀) con `find_peaks()`, la frecuencia media, el brillo (energía en frecuencias altas) y la intensidad RMS (energía total del sonido). Finalmente, muestra estos valores en una tabla para comparar las características de cada audio.
 
 ```python
