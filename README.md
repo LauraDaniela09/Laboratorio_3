@@ -463,9 +463,8 @@ for i, ruta in enumerate(archivos, 1):
 plt.tight_layout()
 plt.show()
 
-# === Mostrar resultados numéricos ===
 print("\nRESULTADOS DE CADA AUDIO:\n")
-print(f"{'Archivo':<15} {'F0 (Hz)':<12} {'F_media (Hz)':<15} {'Brillo':<10} {'Intensidad':<12}")
+print(f"{'Archivo':<15} {'F fund (Hz)':<12} {'F media (Hz)':<15} {'Brillo':<10} {'Intensidad':<12}")
 for r in resultados:
 print(f"{r[0]:<15} {r[1]:<12.2f} {r[2]:<15.2f} {r[3]:<10.3f} {r[4]:<12.4f}")
 ```
@@ -474,9 +473,9 @@ print(f"{r[0]:<15} {r[1]:<12.2f} {r[2]:<15.2f} {r[3]:<10.3f} {r[4]:<12.4f}")
 <img width="700" height="900" alt="image" src="https://github.com/user-attachments/assets/05831967-374c-490e-8565-e9d2df6d2e5a" />
 </p>
 
-<p align="center">
-<img width="400" height="201" alt="image" src="https://github.com/user-attachments/assets/005f8336-0260-4c31-94f7-a998148a80cd" />
-</p>
+<img width="400" height="203" alt="image" src="https://github.com/user-attachments/assets/5820007e-d664-460a-b209-448f6f5ade80" />
+
+
 ---
 
 
