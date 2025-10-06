@@ -13,6 +13,8 @@ Esa parte del código muestra la importación de librerías necesarias para trab
 
 <h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝐚 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
 𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙤𝙨 𝙖𝙪𝙙𝙞𝙤𝙨 𝙮 𝙫𝙞𝙨𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙖 𝙨𝙚ñ𝙖𝙡 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤
+El código utiliza la función `wav.read()` de `SciPy` para cargar el archivo  y obtener su frecuencia de muestreo y datos de la señal. Si el audio tiene más de un canal, se selecciona solo uno para trabajar en mono. Luego, con `np.linspace()` de `NumPy`, se crea el eje de tiempo para cada muestra. La librería `Matplotlib (plt.plot())` se usa para graficar la señal, mostrando la amplitud frente al tiempo. Finalmente, con `Audio()` de `IPython.display`, se reproduce el sonido directamente en el entorno de ejecución.
+
 
 ```python
 #Señal mujer 1
