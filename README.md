@@ -163,8 +163,196 @@ display(Audio(man3, rate=rateh3))
 
 *señal generada*
 <p align="center">
-<img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/265c2a14-9681-4724-9c95-7e243bd389fe" />
+<img width="1034" height="250" alt="image" src="https://github.com/user-attachments/assets/265c2a14-9681-4724-9c95-7e243bd389fe" />
 </p>
+
+tranformadas de fourier
+```python
+#MUJER 1
+# === Cargar el audio ===
+fs, audio = wavfile.read('/Mujer1.wav')
+
+# Convertir a mono si es estéreo
+if audio.ndim > 1:
+    audio = np.mean(audio, axis=1)
+
+# === FFT ===
+N = len(audio)
+X = np.fft.fft(audio)
+f = np.linspace(0, fs/2, N//2)
+
+# === Solo parte real positiva ===
+X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
+mag = np.abs(X[:N//2]) / N
+
+# === Graficar ===
+plt.figure(figsize=(12, 8))
+
+# Parte real positiva
+plt.subplot(2, 1, 1)
+plt.plot(f, X_real_pos,color="#D36CA0")
+plt.title('Transformada de Fourier (AUDIO MUJER 1)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Amplitud  ')
+plt.grid(True)
+
+# Espectro de magnitud
+plt.subplot(2, 1, 2)
+plt.plot(f, 20*np.log10(mag + 1e-12),color="#A94F8A" )
+plt.title('Espectro de Magnitud ')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Magnitud [dB]')
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+## resultado
+<p align="center">
+<img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/8baf1b7f-2378-406d-8f27-380e5ff7939d" />
+</p>
+<p align="center">
+<img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/467e446a-dd4d-42b4-90dd-eee842f4fb1b" />
+</p>
+
+```python
+#MUJER 2
+# === Cargar el audio ===
+fs, audio = wavfile.read('/Mujer2.wav')
+
+# Convertir a mono si es estéreo
+if audio.ndim > 1:
+    audio = np.mean(audio, axis=1)
+
+# === FFT ===
+N = len(audio)
+X = np.fft.fft(audio)
+f = np.linspace(0, fs/2, N//2)
+
+# === Solo parte real positiva ===
+X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
+mag = np.abs(X[:N//2]) / N
+
+# === Graficar ===
+plt.figure(figsize=(12, 8))
+
+# Parte real positiva
+plt.subplot(2, 1, 1)
+plt.plot(f, X_real_pos,color="#D36CA0")
+plt.title('Transformada de Fourier (AUDIO MUJER 2)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Amplitud ')
+plt.grid(True)
+
+# Espectro de magnitud
+plt.subplot(2, 1, 2)
+plt.plot(f, 20*np.log10(mag + 1e-12),color="#A94F8A")
+plt.title('Espectro de Magnitud ')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Magnitud [dB]')
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+## resultado
+<p align="center">
+<img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/31971d0e-4aa9-4d65-8cf7-89541f3e5d8b" />
+<img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/b980f406-afaf-4260-92f8-8ef1959aec46" />
+</p>
+
+```python
+#MUJER 3
+# === Cargar el audio ===
+fs, audio = wavfile.read('/Mujer3.wav')
+
+# Convertir a mono si es estéreo
+if audio.ndim > 1:
+    audio = np.mean(audio, axis=1)
+
+# === FFT ===
+N = len(audio)
+X = np.fft.fft(audio)
+f = np.linspace(0, fs/2, N//2)
+
+# === Solo parte real positiva ===
+X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
+mag = np.abs(X[:N//2]) / N
+
+# === Graficar ===
+plt.figure(figsize=(12, 8))
+
+# Parte real positiva
+plt.subplot(2, 1, 1)
+plt.plot(f, X_real_pos,color="#D36CA0")
+plt.title('Transformada de Fourier (AUDIO MUJER 3)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Amplitud ')
+plt.grid(True)
+
+# Espectro de magnitud
+plt.subplot(2, 1, 2)
+plt.plot(f, 20*np.log10(mag + 1e-12),color="#A94F8A")
+plt.title('Espectro de Magnitud ')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Magnitud [dB]')
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+## resultado
+<p align="center">
+<img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/bf9e2991-724d-4286-ac5d-5e364dbdac9a" />
+<img width="1189" height="600" alt="image" src="https://github.com/user-attachments/assets/8ed30b3d-4a81-4338-90e6-16e5c006a45d" />
+</p>
+```python
+#HOMBRE 1
+# === Cargar el audio ===
+fs, audio = wavfile.read('/Man1.wav')
+
+# Convertir a mono si es estéreo
+if audio.ndim > 1:
+    audio = np.mean(audio, axis=1)
+
+# === FFT ===
+N = len(audio)
+X = np.fft.fft(audio)
+f = np.linspace(0, fs/2, N//2)
+
+# === Solo parte real positiva ===
+X_real_pos = np.abs(X.real[:N//2])  # valor absoluto elimina negativos
+mag = np.abs(X[:N//2]) / N
+
+# === Graficar ===
+plt.figure(figsize=(12, 8))
+
+# Parte real positiva
+plt.subplot(2, 1, 1)
+plt.plot(f, X_real_pos,color="#32CD32")
+plt.title('Transformada de Fourier (AUDIO HOMBRE 1)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Amplitud ')
+plt.grid(True)
+
+# Espectro de magnitud
+plt.subplot(2, 1, 2)
+plt.plot(f, 20*np.log10(mag + 1e-12),color="#00FF7F")
+plt.title('Espectro de Magnitud ')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Magnitud [dB]')
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+``
+
+## resultado
+<p align="center">
+<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/56bbd888-96fa-46aa-9b05-9aa0ce4b0600" />
+<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/af6d9b7e-70d6-46f9-a2c5-2d40cf4219ad" />
+</p>
+
 ---
 
 
