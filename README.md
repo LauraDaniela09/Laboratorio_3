@@ -33,7 +33,7 @@ display(Audio(Mujer1, rate=ratem1))
 
 *señal generada*
 <p align="center">
-<img width="900" height="200" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
+<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/14757bf6-05d2-4da9-b1d2-df0050c1f588" />
 </p>
 
 ```python
