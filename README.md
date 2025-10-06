@@ -1,5 +1,5 @@
-## 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - 𝐟𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 𝐯𝐨𝐳
-𝙞𝙣𝙩𝙧𝙤𝙙𝙪𝙘𝙘𝙞𝙤𝙣
+## 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - F𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 V𝐨𝐳
+𝙞𝙣𝙩𝙧𝙤𝙙𝙪𝙘𝙘𝙞ó𝙣
 
 En este laboratorio se realizó un análisis espectral de la voz  empleando técnicas de procesamiento digital de señales. Se utilizaron grabaciones de voces masculinas y femeninas para calcular parámetros como la frecuencia fundamental, frecuencia media, brillo e intensidad.
 
@@ -7,7 +7,7 @@ En este laboratorio se realizó un análisis espectral de la voz  empleando téc
 
 Aplicar la Transformada de Fourier para analizar y comparar las características espectrales de voces masculinas y femeninas, identificando sus diferencias en frecuencia e intensidad para comprender mejor el comportamiento acústico de la voz humana.
 
-𝙞𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙞𝙗𝙧𝙚𝙧𝙞𝙖𝙨
+𝙞𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞ó𝙣 𝙙𝙚 𝙡𝙞𝙗𝙧𝙚𝙧𝙞𝙖𝙨
 ```python
 import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt
@@ -463,8 +463,36 @@ for ruta in archivos:
 <img width="500" height="194" alt="image" src="https://github.com/user-attachments/assets/72d6d7eb-34e5-4f73-83f7-df2b3f0d429c" />
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
+Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
+
+*IMAGEN DE LOS CALCULOS DE SOFI
+
+
+Primero se importan las librerias, se lee el archivo `/Man1.wav` y guarda la frecuencia de muestreo en `ratem1` y los datos de la señal en `Man1`.
+Después define los parametros del filtro pasabanda como la frecuencia de corte baja y alta basandose en los valores teoricos. Para hombres está el rango de 80-400Hz.
+
+```python
+from scipy import signal
+from scipy.io import wavfile
+ratem1, Man1 = wav.read("/Man1.wav")
+
+f_low = 80
+f_high = 400
+order = 4
+fs = ratem1
+nyquist = fs / 2
+low = f_low / nyquist
+high = f_high / nyquist
+
+b, a = signal.butter(order, [f_low/nyquist, f_high/nyquist], btype='bandpass')
+Man1_filtrada = signal.filtfilt(b, a, Man1)
+t = np.linspace(0, len(Man1)/fs, len(Man1))
+```
+Se asigna la frecuencia de muestreo `ratem1` a la variable `fs` y se calculan las frecuencias normalizadas y la de Nyquist.
+Se diseña el filtro pasabanda tipo butterworth que devuelve los coeficientes del filtro en `b` (numerador) y `a` (denominador).
+
+
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
 
----
 
 
