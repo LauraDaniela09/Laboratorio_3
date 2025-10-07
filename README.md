@@ -22,7 +22,7 @@ Esa parte del código muestra la importación de librerías necesarias para trab
 
 ```mermaid
 flowchart TD
-  A([Inicio - Parte A]) --> B[Seleccionar hablantes masculino y femenino]
+  A([Inicio]) --> B[Seleccionar hablantes masculino y femenino]
   B --> C[Preparar ambiente de grabacion control de ruido y microfono]
   C --> D[Dar instrucciones al sujeto emitir vocales o frases]
   D --> E[Grabar audio y guardar con etiquetas]
@@ -480,7 +480,7 @@ for ruta in archivos:
 
 ```mermaid
 flowchart TD
-  A[Inicio - Parte B: Archivos de audio] --> B[Preprocesamiento filtrado y segmentacion]
+  A([Inicio]) --> B[Preprocesamiento filtrado y segmentacion]
   B --> C[Eliminar ruido y normalizar senal]
   C --> D[Segmentar eventos vocales]
   D --> E[Extraer parametros acusticos]
@@ -492,8 +492,9 @@ flowchart TD
   E1 & E2 & E3 & E4 & E5 --> F[Guardar resultados en tabla]
   F --> G[Revisar valores atipicos y limpiar datos]
   G --> H[Datos listos para comparacion]
-  H --> I[Fin Parte B]
+  H --> I([Fin Parte B])
 ```
+
 
 
 ### Filtro pasabanda hombre
@@ -813,7 +814,7 @@ print(df_resultados.T)
 
 ```mermaid
 flowchart TD
-  A[Inicio - Parte C: Datos procesados] --> B[Separar datos por genero masculino y femenino]
+  A([Inicio]) --> B[Separar datos por genero masculino y femenino]
   B --> C[Calcular medias y desviaciones]
   C --> D[Comparar frecuencia fundamental entre generos]
   C --> E[Comparar intensidad y brillo]
@@ -824,8 +825,9 @@ flowchart TD
   G --> H[Interpretar resultados fisiologicos y tecnicos]
   H --> I[Redactar conclusiones sobre voz masculina y femenina]
   I --> J[Discutir relevancia clinica de jitter y shimmer]
-  J --> K[Fin]
+  J --> K([Fin])
 ```
+
 
 
 se respondera las siguientes preguntas con respecto a los resultados obtenidos 
