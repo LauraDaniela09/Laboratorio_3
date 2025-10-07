@@ -549,9 +549,29 @@ El código grafica la señal de voz de un hombre antes y después de aplicar un 
 <img width="700" height="490" alt="image" src="https://github.com/user-attachments/assets/6c8b224f-e2e6-401f-84ff-3b324bafe0bc" />
 </p>
 
+```python
+w, h = signal.freqz(b, a, worN=4096, fs=fs)  # usamos fs para escalar en Hz
 
+plt.figure(figsize=(10,6))
 
-*CODIGO E IMAGEN DE BODE
+# Magnitud
+plt.subplot(2,1,1)
+plt.semilogx(w, 20 * np.log10(abs(h)), color='#00796B')
+plt.title('Diagrama de Bode - Magnitud (Filtro pasa banda 80–400 Hz)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Ganancia [dB]')
+plt.xlim(10, fs/2)
+plt.ylim(-80, 5)
+plt.grid(True, which='both', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()
+```
+El código usa `signal.freqz()` para obtener la respuesta en frecuencia del filtro y graficarla en escala logarítmica. Muestra cómo varía la ganancia en decibelios según la frecuencia, destacando la banda de paso entre 80 y 400 Hz y la atenuación fuera de ese rango.
+## Grafico de respuesta de frecuencia (bode)
+
+<p align="center">
+<img width="700" height="332" alt="image" src="https://github.com/user-attachments/assets/0d890148-9a96-4a74-ac6b-684a0f1f9b52" />
+</p>
 
 ### Filtro pasabanda mujer
 
