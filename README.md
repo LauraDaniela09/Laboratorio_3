@@ -636,7 +636,14 @@ print(df.to_string(index=False, justify='center', formatters={
     "Shimmer_rel (%)": "{:.2f}".format
 }))
 ```
-<img width="857" height="393" alt="image" src="https://github.com/user-attachments/assets/2dc04698-eb0a-4ad3-ad41-7ae1a4ed62cd" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/af6e28ad-2e1e-4465-a97e-959a65d207b0" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/0f465875-2ab9-41e6-a1d2-b6f984b71353" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/03d6e32f-79ab-44f3-accb-9dfc781bd8c4" />
+<img width="857" height="393" alt="image" src="https://github.com/user-attachments/assets/bcd84f67-e49e-4635-8c00-7151cd49a1aa" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/f631cde4-3cfc-4b4d-a245-fe52b6d5c244" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/3cce8e3c-c1ec-46ae-8d92-f53375ecf45e" />
+
+
 
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
