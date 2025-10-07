@@ -477,6 +477,24 @@ for ruta in archivos:
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
 
+```mermaid
+flowchart TD
+  A[Inicio - Parte B: Archivos de audio] --> B[Preprocesamiento filtrado y segmentacion]
+  B --> C[Eliminar ruido y normalizar senal]
+  C --> D[Segmentar eventos vocales]
+  D --> E[Extraer parametros acusticos]
+  E --> E1[Frecuencia fundamental F0]
+  E --> E2[Intensidad o amplitud]
+  E --> E3[Jitter]
+  E --> E4[Shimmer]
+  E --> E5[Brillo o HNR]
+  E1 & E2 & E3 & E4 & E5 --> F[Guardar resultados en tabla]
+  F --> G[Revisar valores atipicos y limpiar datos]
+  G --> H[Datos listos para comparacion]
+  H --> I[Fin Parte B - Analisis completado]
+```
+
+
 ### Filtro pasabanda hombre
 
 Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
@@ -717,6 +735,24 @@ print(df_resultados.T)
 
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
+
+```mermaid
+flowchart TD
+  A[Inicio - Parte C: Datos procesados] --> B[Separar datos por genero masculino y femenino]
+  B --> C[Calcular medias y desviaciones]
+  C --> D[Comparar frecuencia fundamental entre generos]
+  C --> E[Comparar intensidad y brillo]
+  C --> F[Comparar jitter y shimmer]
+  D --> G[Analizar diferencias observadas]
+  E --> G
+  F --> G
+  G --> H[Interpretar resultados fisiologicos y tecnicos]
+  H --> I[Redactar conclusiones sobre voz masculina y femenina]
+  I --> J[Discutir relevancia clinica de jitter y shimmer]
+  J --> K[Fin Parte C - Informe final]
+```
+
+
 se respondera las siguientes preguntas con respecto a los resultados obtenidos 
 
 - *¿Qué diferencias se observan en la frecuencia fundamental?*
