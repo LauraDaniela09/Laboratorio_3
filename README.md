@@ -499,7 +499,7 @@ flowchart TD
 
 Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
 <p align="center">
-<img width="904" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0b9f2fe-c3ac-43a2-966d-092f56510ba2" />
+<img width="700" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0b9f2fe-c3ac-43a2-966d-092f56510ba2" />
 </p>
 
 
@@ -527,13 +527,39 @@ Se asigna la frecuencia de muestreo `ratem1` a la variable `fs` y se calculan la
 Se diseña el filtro pasabanda tipo butterworth que devuelve los coeficientes del filtro en `b` (numerador) y `a` (denominador).
 Aplica el filtro a la señal usando `filtfilt`, que filtra hacia adelante y hacia atrás para eliminar el desfase (fase cero).
 
+```python
+plt.figure(figsize=(12,5))
+plt.subplot(2,1,1)
+plt.plot(t, Man1, color='#005C63')
+plt.title("Señal original (voz Hombre)")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.subplot(2,1,2)
+plt.plot(t, Man1_filtrada, color='#00A5A8')
+plt.title("Señal filtrada (pasa banda 80–400 Hz, Butterworth orden 4)")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.tight_layout()
+plt.show()
+```
+El código grafica la señal de voz de un hombre antes y después de aplicar un filtro pasa banda Butterworth de 80–400 Hz. La primera gráfica muestra la señal original, y la segunda la señal filtrada, donde se conservan solo las frecuencias propias de la voz masculina y se eliminan ruidos fuera de ese rango.
+## resultado
+
+<p align="center">
+<img width="700" height="490" alt="image" src="https://github.com/user-attachments/assets/6c8b224f-e2e6-401f-84ff-3b324bafe0bc" />
+</p>
+
+
+
 *CODIGO E IMAGEN DE BODE
 
 ### Filtro pasabanda mujer
 
 Se repite el mismo proceso para la señal de mujer pero con rango de 150-500Hz.
-<img width="966" height="1280" alt="image" src="https://github.com/user-attachments/assets/53dc9c1b-3ec4-4072-8996-6583ac933209" />
-<img width="1097" height="1210" alt="image" src="https://github.com/user-attachments/assets/4adf867e-bc3f-4c5c-80e6-1dc103d8a0f6" />
+
+<p align="center">
+<img width="700" height="1280" alt="image" src="https://github.com/user-attachments/assets/c5ff131e-8820-4fa1-a4ff-2330d086d916" />
+</p>
 
 ```python
 from scipy import signal
@@ -566,6 +592,25 @@ plt.ylabel("Amplitud")
 plt.tight_layout()
 plt.show()
 ```
+```python
+plt.figure(figsize=(12,5))
+plt.subplot(2,1,1)
+plt.plot(t, Mujer1, color='#6A5ACD')
+plt.title("Señal original (voz mujer)")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.subplot(2,1,2)
+plt.plot(t, Mujer1_filtrada, color='#9A00FF')
+plt.title("Señal filtrada (pasa banda 150–500 Hz, Butterworth orden 2)")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.tight_layout()
+plt.show()
+```
+<p align="center">
+<img width="700" height="490" alt="image" src="https://github.com/user-attachments/assets/15182c84-e4b9-4680-908b-882c063b36c1" />
+</p>
+
 Se grafica la respuesta de frecuencia (Diagrama Bode de magnitud)
 
 ## Grafico de respuesta de frecuencia (bode)
@@ -584,7 +629,9 @@ plt.ylim(-60, 5)
 plt.grid(True)
 plt.show()
 ```
-<img width="716" height="393" alt="image" src="https://github.com/user-attachments/assets/1629a50d-9b10-4816-bfec-5510a41f71e1" />
+<p align="center">
+<img width="600" height="393" alt="image" src="https://github.com/user-attachments/assets/1629a50d-9b10-4816-bfec-5510a41f71e1" />
+</p>
 
 
 ## Medición jitter y shimmer
