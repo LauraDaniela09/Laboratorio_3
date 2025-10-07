@@ -1,4 +1,4 @@
-## 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - F𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 V𝐨𝐳
+# L𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨 𝟑 - F𝐫𝐞𝐜𝐮𝐞𝐧𝐜𝐢𝐚 𝐲 V𝐨𝐳
 𝙞𝙣𝙩𝙧𝙤𝙙𝙪𝙘𝙘𝙞ó𝙣
 
 En este laboratorio se realizó un análisis espectral de la voz  empleando técnicas de procesamiento digital de señales. Se utilizaron grabaciones de voces masculinas y femeninas para calcular parámetros como la frecuencia fundamental, frecuencia media, brillo e intensidad.
@@ -532,8 +532,10 @@ plt.tight_layout()
 plt.show()
 ```
 Se grafica la respuesta de frecuencia (Diagrama Bode de magnitud)
+
+## Grafico de respuesta de frecuencia (bode)
+
 ```pythom
-##Grafico de respuesta de frecuencia (bode)
 w, h = signal.freqz(b, a, worN=4096)
 f = (w/np.pi) * (fs/2)
 
@@ -550,7 +552,8 @@ plt.show()
 <img width="716" height="393" alt="image" src="https://github.com/user-attachments/assets/1629a50d-9b10-4816-bfec-5510a41f71e1" />
 
 
-#Medición jitter y shimmer
+## Medición jitter y shimmer
+
 Se importan las librerias, se define la función `jitter_shimmer` donde se recibe la señal de voz, se calculan el jitter y shimmer y sus porcentajes.
 Finalmente se visualiza una grafica donde se ve en azul la señal original de voz, en rojo los cruces por ceros y en verde los picos. Y una tabla con los resultados de cada señal.
 
