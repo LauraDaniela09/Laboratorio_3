@@ -741,13 +741,18 @@ print(df.to_string(index=False, justify='center', formatters={
     "Shimmer_rel (%)": "{:.2f}".format
 }))
 ```
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/af6e28ad-2e1e-4465-a97e-959a65d207b0" />
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/0f465875-2ab9-41e6-a1d2-b6f984b71353" />
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/03d6e32f-79ab-44f3-accb-9dfc781bd8c4" />
-<img width="857" height="393" alt="image" src="https://github.com/user-attachments/assets/bcd84f67-e49e-4635-8c00-7151cd49a1aa" />
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/f631cde4-3cfc-4b4d-a245-fe52b6d5c244" />
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/3cce8e3c-c1ec-46ae-8d92-f53375ecf45e" />
-<img width="873" height="248" alt="image" src="https://github.com/user-attachments/assets/f1c021ce-8420-47c8-aa4f-bac3c83b5c64" />
+<p align="center">
+<img width="700" height="393" alt="image" src="https://github.com/user-attachments/assets/af6e28ad-2e1e-4465-a97e-959a65d207b0" />
+<img width="700" height="393" alt="image" src="https://github.com/user-attachments/assets/0f465875-2ab9-41e6-a1d2-b6f984b71353" />
+<img width="700" height="393" alt="image" src="https://github.com/user-attachments/assets/03d6e32f-79ab-44f3-accb-9dfc781bd8c4" />
+<img width="700" height="393" alt="image" src="https://github.com/user-attachments/assets/bcd84f67-e49e-4635-8c00-7151cd49a1aa" />
+<img width="700" height="393" alt="image" src="https://github.com/user-attachments/assets/f631cde4-3cfc-4b4d-a245-fe52b6d5c244" />
+<img width="700" height="393" alt="image" src="https://github.com/user-attachments/assets/3cce8e3c-c1ec-46ae-8d92-f53375ecf45e" />
+</p>
+
+
+<img width="500" height="248" alt="image" src="https://github.com/user-attachments/assets/21f0d399-02de-41e2-aa54-793ecb4350ce" />
+
 
 ## Jitter y shimmer de la señal de mujer filtrada
 
@@ -798,7 +803,8 @@ df_resultados.index = ["Resultados"]
 print(df_resultados.T)
 
 ```
-<img width="419" height="168" alt="image" src="https://github.com/user-attachments/assets/34c3dc0a-fc29-4282-be6e-18918bc12a0e" />
+<img width="400" height="165" alt="image" src="https://github.com/user-attachments/assets/7ce8f6c4-6e3c-45f3-8e4d-92883bdebabd" />
+
 
 
 
