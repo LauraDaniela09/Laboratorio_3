@@ -463,7 +463,9 @@ for ruta in archivos:
 <img width="500" height="194" alt="image" src="https://github.com/user-attachments/assets/72d6d7eb-34e5-4f73-83f7-df2b3f0d429c" />
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘽 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
-#Filtro pasabanda hombre
+
+### Filtro pasabanda hombre
+
 Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
 
 *IMAGEN DE LOS CALCULOS DE SOFI
@@ -495,7 +497,8 @@ Aplica el filtro a la señal usando `filtfilt`, que filtra hacia adelante y haci
 
 *CODIGO E IMAGEN DE BODE
 
-#Filtro pasabanda mujer
+### Filtro pasabanda mujer
+
 Se repite el mismo proceso para la señal de mujer pero con rango de 150-500Hz.
 ```python
 from scipy import signal
@@ -544,7 +547,8 @@ plt.ylim(-60, 5)
 plt.grid(True)
 plt.show()
 ```
-*FOTO DIAGRAMA BODE
+<img width="716" height="393" alt="image" src="https://github.com/user-attachments/assets/1629a50d-9b10-4816-bfec-5510a41f71e1" />
+
 
 #Medición jitter y shimmer
 Se importan las librerias, se define la función `jitter_shimmer` donde se recibe la señal de voz, se calculan el jitter y shimmer y sus porcentajes.
@@ -632,6 +636,7 @@ print(df.to_string(index=False, justify='center', formatters={
     "Shimmer_rel (%)": "{:.2f}".format
 }))
 ```
+<img width="857" height="393" alt="image" src="https://github.com/user-attachments/assets/2dc04698-eb0a-4ad3-ad41-7ae1a4ed62cd" />
 
 
 <h1 align="center"><i><b>𝙋𝙖𝙧𝙩𝙚 𝘾 𝙙𝙚𝙡 𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙤𝙧𝙞𝙤</b></i></h1>
