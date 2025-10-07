@@ -20,7 +20,8 @@ Esa parte del código muestra la importación de librerías necesarias para trab
 
 <h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 A 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
 
-\flowchart TD
+
+flowchart TD
   A[Inicio - Parte A: Preparación] --> B[Seleccionar hablantes\n(masculino / femenino)]
   B --> C[Preparar ambiente de grabación\n(control ruido, micrófono, distancia)]
   C --> D[Instrucciones al sujeto\n(emitir vocales/frases)]
