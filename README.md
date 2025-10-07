@@ -22,17 +22,18 @@ Esa parte del código muestra la importación de librerías necesarias para trab
 
 ```mermaid
 flowchart TD
-  A[Inicio - Parte A: Preparación] --> B[Seleccionar hablantes: masculino y femenino]
-  B --> C[Preparar ambiente de grabación: control de ruido, microfono, distancia]
-  C --> D[Dar instrucciones al sujeto: emitir vocales o frases]
+  A([Inicio - Parte A]) --> B[Seleccionar hablantes masculino y femenino]
+  B --> C[Preparar ambiente de grabacion control de ruido y microfono]
+  C --> D[Dar instrucciones al sujeto emitir vocales o frases]
   D --> E[Grabar audio y guardar con etiquetas]
-  E --> F[Verificar calidad de la grabación: SNR y clipping]
+  E --> F[Verificar calidad de la grabacion SNR y clipping]
   F --> G{Calidad aceptable}
   G -->|Si| H[Almacenar archivo y metadatos]
-  G -->|No| I[Repetir grabación o descartar]
+  G -->|No| I[Repetir grabacion o descartar]
   I --> F
-  H --> J[Fin Parte A ]
+  H --> J([Fin Parte A])
 ```
+
 
 
 En esta parte del codigo se utiliza la función `wav.read()` de `SciPy` para cargar el archivo  y obtener su frecuencia de muestreo y datos de la señal. Si el audio tiene más de un canal, se selecciona solo uno para trabajar en mono. Luego, con `np.linspace()` de `NumPy`, se crea el eje de tiempo para cada muestra. La librería `Matplotlib (plt.plot())` se usa para graficar la señal, mostrando la amplitud frente al tiempo. Finalmente, con `Audio()` de `IPython.display`, se reproduce el sonido directamente en el entorno de ejecución.este procedimiento se realiza con cada una de las señales tanto de mujeres como para hombres.
