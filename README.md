@@ -857,17 +857,12 @@ Las diferencias en jitter y shimmer es poca, ya que ambos presentan niveles simi
 
 <h1 align="center"><i><b>Bibliografia</b></i></h1>
 
-Boersma, P., & Weenink, D. (2024). Praat: Doing phonetics by computer [Computer program]. University of Amsterdam. Disponible en: https://www.fon.hum.uva.nl/praat/
+Boersma & Weenink (2024). Praat: Doing phonetics by computer.
 
-→ (Herramienta más usada para análisis acústico: extracción de F0, jitter, shimmer, HNR, etc.)
+Baken & Orlikoff (2000). Clinical Measurement of Speech and Voice.
 
-Baken, R. J., & Orlikoff, R. F. (2000). Clinical Measurement of Speech and Voice. San Diego, CA: Singular Publishing Group.
-→ (Referencia clásica sobre medición clínica de parámetros acústicos de la voz).
+Titze (1994). Principles of Voice Production.
 
-Kent, R. D., & Read, C. (2002). The Acoustic Analysis of Speech. Singular Thomson Learning.
-→ (Explica en detalle cómo los parámetros como frecuencia fundamental, jitter y shimmer reflejan características fisiológicas del sistema fonatorio).
+Maryn et al. (2009). JASA, 126(5), 2619–2634.
 
-Titze, I. R. (1994). Principles of Voice Production. Englewood Cliffs, NJ: Prentice Hall.
-→ (Base fisiológica de la producción vocal, diferencias entre voces masculinas y femeninas, e influencia de la anatomía laríngea).
-
-Maryn, Y., Roy, N., De Bodt, M., Van Cauwenberge, P., & Corthals, P. (2009). “Acoustic measurement of overall voice quality: A meta-analysis.” The Journal of the Acoustical Society of America, 126(5), 2619–2634.
+Kent & Read (2002). The Acoustic Analysis of Speech.
