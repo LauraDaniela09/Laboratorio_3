@@ -499,7 +499,7 @@ flowchart TD
 
 Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
 <p align="center">
-<img width="700" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0b9f2fe-c3ac-43a2-966d-092f56510ba2" />
+<img width="600" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0b9f2fe-c3ac-43a2-966d-092f56510ba2" />
 </p>
 
 
@@ -578,7 +578,7 @@ El código usa `signal.freqz()` para obtener la respuesta en frecuencia del filt
 Se repite el mismo proceso para la señal de mujer pero con rango de 150-500Hz.
 
 <p align="center">
-<img width="700" height="1280" alt="image" src="https://github.com/user-attachments/assets/c5ff131e-8820-4fa1-a4ff-2330d086d916" />
+<img width="600" height="1280" alt="image" src="https://github.com/user-attachments/assets/c5ff131e-8820-4fa1-a4ff-2330d086d916" />
 </p>
 
 ```python
