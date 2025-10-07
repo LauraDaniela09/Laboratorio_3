@@ -638,21 +638,22 @@ Se grafica la respuesta de frecuencia (Diagrama Bode de magnitud)
 ## Grafico de respuesta de frecuencia (bode)
 
 ```pythom
-w, h = signal.freqz(b, a, worN=4096)
-f = (w/np.pi) * (fs/2)
+w, h = signal.freqz(b, a, worN=4096, fs=fs)
 
-plt.figure(figsize=(8,4))
-plt.plot(f, 20*np.log10(abs(h)))
-plt.title("Respuesta en frecuencia del filtro pasa-banda (zoom 0–1000 Hz)")
-plt.xlabel("Frecuencia [Hz]")
-plt.ylabel("Magnitud [dB]")
-plt.xlim(0, 1000)
-plt.ylim(-60, 5)
-plt.grid(True)
+plt.figure(figsize=(10,5))
+plt.semilogx(w, 20 * np.log10(abs(h)), color='#9A00FF')
+plt.title('Diagrama de Bode - Magnitud (Filtro pasa banda 150–500 Hz)')
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Ganancia [dB]')
+plt.xlim(10, fs/2)
+plt.ylim(-80, 5)
+plt.grid(True, which='both', linestyle='--', alpha=0.7)
+plt.tight_layout()
 plt.show()
+
 ```
 <p align="center">
-<img width="600" height="393" alt="image" src="https://github.com/user-attachments/assets/1629a50d-9b10-4816-bfec-5510a41f71e1" />
+<img width="600" height="489" alt="image" src="https://github.com/user-attachments/assets/6a71ad18-38f6-4558-8b29-9511c5e2fdc8" />
 </p>
 
 
