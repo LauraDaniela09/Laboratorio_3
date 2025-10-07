@@ -642,7 +642,58 @@ print(df.to_string(index=False, justify='center', formatters={
 <img width="857" height="393" alt="image" src="https://github.com/user-attachments/assets/bcd84f67-e49e-4635-8c00-7151cd49a1aa" />
 <img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/f631cde4-3cfc-4b4d-a245-fe52b6d5c244" />
 <img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/3cce8e3c-c1ec-46ae-8d92-f53375ecf45e" />
+<img width="873" height="248" alt="image" src="https://github.com/user-attachments/assets/f1c021ce-8420-47c8-aa4f-bac3c83b5c64" />
 
+## Jitter y shimmer de la señal de mujer filtrada
+
+posteriormente calculamos los mismos parametros de jitter y shimmer pero para la señal filtrada con el proposito de comparar que tanto afectaba el filtrado a estos valores
+```python
+import numpy as np
+import scipy.io.wavfile as wav
+import scipy.signal as signal
+import pandas as pd
+
+#Función para calcular Jitter y Shimmer
+def calcular_jitter_shimmer(signal_data, fs):
+    # Cruces por cero para medir periodos
+    cruces = np.where(np.diff(np.sign(signal_data)))[0]
+    periodos = np.diff(cruces) / fs
+    if len(periodos) < 2:
+        return np.nan, np.nan, np.nan, np.nan
+
+    #Jitter
+    jitter_abs = np.mean(np.abs(np.diff(periodos)))
+    jitter_rel = 100 * (jitter_abs / np.mean(periodos))
+
+    #Shimmer
+    amplitudes = []
+    for i in range(len(cruces) - 1):
+        amplitudes.append(np.max(signal_data[cruces[i]:cruces[i+1]]) -
+                          np.min(signal_data[cruces[i]:cruces[i+1]]))
+    amplitudes = np.array(amplitudes)
+
+    shimmer_abs = np.mean(np.abs(np.diff(amplitudes)))
+    shimmer_rel = 100 * (shimmer_abs / np.mean(amplitudes))
+
+    return jitter_abs, jitter_rel, shimmer_abs, shimmer_rel
+
+#Calcular métricas
+ja, jr, sa, sr = calcular_jitter_shimmer(Mujer1_filtrada, ratem1)
+
+#Mostrar resultados en tabla
+df_resultados = pd.DataFrame([{
+    "Señal": "Mujer1_filtrada",
+    "Jitter abs [s]": ja,
+    "Jitter rel [%]": jr,
+    "Shimmer abs": sa,
+    "Shimmer rel [%]": sr,
+}])
+
+df_resultados.index = ["Resultados"]
+print(df_resultados.T)
+
+```
+<img width="419" height="168" alt="image" src="https://github.com/user-attachments/assets/34c3dc0a-fc29-4282-be6e-18918bc12a0e" />
 
 
 
