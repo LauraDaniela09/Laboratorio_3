@@ -20,16 +20,15 @@ Esa parte del código muestra la importación de librerías necesarias para trab
 
 <h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 A 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
 
-
 ```mermaid
 flowchart TD
-  A[Inicio - Parte A: Preparación] --> B[Seleccionar hablantes (masculino / femenino)]
-  B --> C[Preparar ambiente de grabación: control de ruido, micrófono, distancia]
+  A[Inicio - Parte A: Preparación] --> B[Seleccionar hablantes: masculino y femenino]
+  B --> C[Preparar ambiente de grabación: control de ruido, microfono, distancia]
   C --> D[Dar instrucciones al sujeto: emitir vocales o frases]
   D --> E[Grabar audio y guardar con etiquetas]
-  E --> F[Verificar calidad de la grabación: SNR, clipping]
-  F --> G{¿Calidad aceptable?}
-  G -->|Sí| H[Almacenar archivo y metadatos]
+  E --> F[Verificar calidad de la grabación: SNR y clipping]
+  F --> G{Calidad aceptable}
+  G -->|Si| H[Almacenar archivo y metadatos]
   G -->|No| I[Repetir grabación o descartar]
   I --> F
   H --> J[Fin Parte A - Listo para procesamiento]
