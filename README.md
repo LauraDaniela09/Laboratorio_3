@@ -31,7 +31,7 @@ flowchart TD
   G -->|Si| H[Almacenar archivo y metadatos]
   G -->|No| I[Repetir grabación o descartar]
   I --> F
-  H --> J[Fin Parte A - Listo para procesamiento]
+  H --> J[Fin Parte A ]
 ```
 
 
@@ -491,7 +491,7 @@ flowchart TD
   E1 & E2 & E3 & E4 & E5 --> F[Guardar resultados en tabla]
   F --> G[Revisar valores atipicos y limpiar datos]
   G --> H[Datos listos para comparacion]
-  H --> I[Fin Parte B - Analisis completado]
+  H --> I[Fin Parte B]
 ```
 
 
@@ -749,7 +749,7 @@ flowchart TD
   G --> H[Interpretar resultados fisiologicos y tecnicos]
   H --> I[Redactar conclusiones sobre voz masculina y femenina]
   I --> J[Discutir relevancia clinica de jitter y shimmer]
-  J --> K[Fin Parte C - Informe final]
+  J --> K[Fin]
 ```
 
 
