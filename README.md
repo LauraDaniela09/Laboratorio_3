@@ -498,8 +498,9 @@ flowchart TD
 ### Filtro pasabanda hombre
 
 Antes de iniciar el codigo se desarrolló a mano el filtro pasabanda para poder encontrar el orden necesario y definir los parametros. 
-
-*IMAGEN DE LOS CALCULOS DE SOFI
+<p align="center">
+<img width="904" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0b9f2fe-c3ac-43a2-966d-092f56510ba2" />
+</p>
 
 
 Primero se importan las librerias, se lee el archivo `/Man1.wav` y guarda la frecuencia de muestreo en `ratem1` y los datos de la señal en `Man1`.
