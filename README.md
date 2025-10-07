@@ -18,7 +18,7 @@ from scipy.io import wavfile
 ```
 Esa parte del código muestra la importación de librerías necesarias para trabajar con archivos de audio y analizarlos:`scipy.io.wavfile` y `wavfile` para leer y escribir archivos de audio `(.wav)`.`matplotlib.pyplot` para graficar señales.`numpy` para realizar operaciones numéricas y de matrices. `IPython.display.Audio` para reproducir el audio directamente en el notebook.`scipy.signal.find_peaks`para detectar picos o puntos importantes en la señal.
 
-<h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝐚 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
+<h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 A 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
 
 𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙤𝙨 𝙖𝙪𝙙𝙞𝙤𝙨 𝙮 𝙫𝙞𝙨𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣 𝙙𝙚 𝙡𝙖 𝙨𝙚ñ𝙖𝙡 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤
 
@@ -500,6 +500,9 @@ Aplica el filtro a la señal usando `filtfilt`, que filtra hacia adelante y haci
 ### Filtro pasabanda mujer
 
 Se repite el mismo proceso para la señal de mujer pero con rango de 150-500Hz.
+<img width="966" height="1280" alt="image" src="https://github.com/user-attachments/assets/53dc9c1b-3ec4-4072-8996-6583ac933209" />
+<img width="1097" height="1210" alt="image" src="https://github.com/user-attachments/assets/4adf867e-bc3f-4c5c-80e6-1dc103d8a0f6" />
+
 ```python
 from scipy import signal
 from scipy.io import wavfile
