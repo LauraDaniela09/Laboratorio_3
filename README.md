@@ -30,8 +30,7 @@ Esa parte del código muestra la importación de librerías necesarias para trab
   G -- Sí --> H[Almacenar archivo y metadatos]
   G -- No --> I[Repetir grabación o descartar]
   I --> F
-  H --> J[Fin Parte A - Listo para procesamiento]
-````
+  H --> J[Fin Parte A - Listo para procesamiento]````
 
 En esta parte del codigo se utiliza la función `wav.read()` de `SciPy` para cargar el archivo  y obtener su frecuencia de muestreo y datos de la señal. Si el audio tiene más de un canal, se selecciona solo uno para trabajar en mono. Luego, con `np.linspace()` de `NumPy`, se crea el eje de tiempo para cada muestra. La librería `Matplotlib (plt.plot())` se usa para graficar la señal, mostrando la amplitud frente al tiempo. Finalmente, con `Audio()` de `IPython.display`, se reproduce el sonido directamente en el entorno de ejecución.este procedimiento se realiza con cada una de las señales tanto de mujeres como para hombres.
 
